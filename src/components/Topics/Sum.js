@@ -20,7 +20,11 @@ class Sum extends Component{
     }
 
     submitHandler(){
-        
+        let firstNum = parseFloat(this.state.number1);
+        let secondNum = parseFloat(this.state.number2);
+        let final = firstNum + secondNum;
+
+        this.setState({ sum: final })
     }
 
     render () {
@@ -30,7 +34,7 @@ class Sum extends Component{
                 <input className="inputLine" onChange={ (e) => this.changeHandler(e.target.value, 1) } ></input>
                 <input className="inputLine" onChange={ (e) => this.changeHandler(e.target.value, 2) }></input>
                 <button className="confirmationButton" onClick={ (e) => this.submitHandler(e.target.value) } >Sum</button>
-                <span className="resultsBox"></span>
+                <span className="resultsBox">Sum: { JSON.stringify(this.state.sum) }</span>
             </div>
         )
     }
