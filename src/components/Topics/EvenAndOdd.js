@@ -21,7 +21,7 @@ class EvenAndOdd extends Component{
         let arr = userInput.split('');
         let even = [];
         let odd = [];
-        console.log(arr);
+        //console.log(arr);
 
         for (let i = 0; i < arr.length; i++){
             if (arr[i] % 2 === 0){

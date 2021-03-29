@@ -20,7 +20,7 @@ class FilterString extends Component{
         let initInput = this.state.userInput;
         let doneArray = [];
 
-        console.log(initArray);
+        //console.log(initArray);
 
         for (let i = 0; i < initArray.length; i++){
             if (initArray[i].includes(initInput)){
