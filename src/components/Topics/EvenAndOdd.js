@@ -18,9 +18,10 @@ class EvenAndOdd extends Component{
     }
 
     assignEvenAndOdds(userInput){
-        let arr = userInput.split(',');
+        let arr = userInput.split('');
         let even = [];
         let odd = [];
+        console.log(arr);
 
         for (let i = 0; i < arr.length; i++){
             if (arr[i] % 2 === 0){
